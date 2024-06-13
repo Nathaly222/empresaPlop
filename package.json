@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "dotenv": "^16.4.5",
+    "ng-zorro-antd": "^17.4.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -34,5 +36,8 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.2"
-  }
+  },
+  "styles": [
+    "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+  ]
 }

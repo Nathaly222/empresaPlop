@@ -1,0 +1,28 @@
+<div class="container">
+  <form nz-form [formGroup]="chupeteForm" (ngSubmit)="submitForm()">
+<form nz-form [formGroup]="chupeteForm" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-label [nzFor]="'name'" nzRequired>Nombre</nz-form-label>
+    <nz-form-control nzErrorTip="Por favor ingresa el nombre del chupete.">
+      <input nz-input formControlName="name" id="'name'" placeholder="Nombre del chupete" />
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label [nzFor]="'flavor'" nzRequired>Sabor</nz-form-label>
+    <nz-form-control nzErrorTip="Por favor ingresa el sabor del chupete.">
+      <input nz-input formControlName="flavor" id="'flavor'" placeholder="Sabor del chupete" />
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label [nzFor]="'price'" nzRequired>Precio</nz-form-label>
+    <nz-form-control nzErrorTip="Por favor ingresa el precio del chupete.">
+      <input nz-input formControlName="price" id="'price'" placeholder="Precio del chupete" />
+    </nz-form-control>
+  </nz-form-item>
+
+  <button nz-button nzType="primary" [disabled]="!chupeteForm.valid">Agregar Chupete</button>
+</form>
+</form>
+</div>
